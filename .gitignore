@@ -2,7 +2,7 @@
 /target
 
 # Output directory
-/output
+/outputs
 
 # Miscellaneous
 *.log
