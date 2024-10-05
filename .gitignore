@@ -1,0 +1,13 @@
+# Maven output
+/target
+
+# Output directory
+/output
+
+# Miscellaneous
+*.log
+*.class
+dependency-reduced-pom.xml
+.classpath
+/.idea
+/.settings
