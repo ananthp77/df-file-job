@@ -62,9 +62,6 @@ It gives the output
 
 ### 1. Clone the Github repositiry
       git clone https://github.com/ananthp77/df-file-job.git
-
-### 2. Get into the project after cloning
-      cd df-file-job
-### 3. Execute the bash script
+### 2. Execute the bash script
 	  Execute `./execute.sh` on Linux systems and verify the output in the outputs directory.
 	  Example Usage: `./execute.sh --inputFile=/e/Ananth/Assessments/input/input.txt`
