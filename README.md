@@ -67,3 +67,4 @@ It gives the output
       cd df-file-job
 ### 3. Execute the bash script
 	  Execute `./execute.sh` on Linux systems and verify the output in the outputs directory.
+	  Example Usage: `./execute.sh --inputFile=/e/Ananth/Assessments/input/input.txt`
