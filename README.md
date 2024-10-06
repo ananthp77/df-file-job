@@ -59,4 +59,11 @@ It gives the output
 	  Navigate to outputs folder and unzip the results.jsonl and view verify the result file.
 	  
 ### Option B
-	  execute the `./execute.sh` in Linux systems and verify the output in the outputs location.
+
+### 1. Clone the Github repositiry
+      git clone https://github.com/ananthp77/df-file-job.git
+
+### 2. Get into the project after cloning
+      cd df-file-job
+### 3. Execute the bash script
+	  Execute `./execute.sh` on Linux systems and verify the output in the outputs directory.
