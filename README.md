@@ -41,7 +41,22 @@ It gives the output
 ```
 ### 2. Clone the Github repositiry
       git clone https://github.com/ananthp77/df-file-job.git
-### 3. Execute the bash File
-		./execute.sh
-### 4. Verify the output
+
+### 3. Get into the project after cloning
+      cd df-file-job
+
+### 4. Build the java code using maven command
+     mvn clean install
+### 5. Get into the target direcctory
+     cd target
+
+### 5. Run the jar file with the input argument 
+      java -jar dataflow-execute.jar --inputFile=<Path to the csv file crated in step1>
+
+##### Example: java -jar dataflow-execute.jar E:\Ananth\Assessments\input\input.txt
+
+### 6. Verify the output
 	  Navigate to outputs folder and unzip the results.jsonl and view verify the result file.
+	  
+### Option B
+	  execute the `./execute.sh` in Linux systems and verify the output in the outputs location.
