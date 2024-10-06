@@ -2,6 +2,7 @@
 
 ## Overview
 This Dataflow job reads the file passed in the argument --inputFile, finds all transactions greater than 20, excludes transactions before 2010, aggregates them based on the transaction date, and calculates the total transaction amount. The aggregated data is then stored in CSV format in the file `output/results.jsonl.gz`.
+The Jnut Testing using TestPipeline is added for testing the composite transform.
 
 For the input
 ```
@@ -45,8 +46,11 @@ It gives the output
 ### 3. Get into the project after cloning
       cd df-file-job
 
-### 4. Build the java code using maven command
-     mvn clean install
+### 4.1 Build the java code using maven command
+	 mvn clean install -DskipTests
+### 4.2 (Optional) Build the java code using maven command(If Unit Testing on the Composite Transform needs to be see)
+	 mvn clean install	 
+	 
 ### 5. Get into the target direcctory
      cd target
 

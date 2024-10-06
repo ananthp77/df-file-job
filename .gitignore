@@ -12,3 +12,4 @@ dependency-reduced-pom.xml
 /.idea
 /.settings
 .project
+/bin/

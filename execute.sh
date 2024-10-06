@@ -11,7 +11,7 @@ INPUT_FILE=$1
 
 # Step 1: Build the project using Maven
 echo "Running Maven clean install..."
-mvn clean install
+mvn clean install -DskipTests
 
 # Step 2: Navigate to the target directory
 echo "Navigating to target directory..."
