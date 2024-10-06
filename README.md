@@ -1,7 +1,7 @@
 # Dataflow File Processing
 
 ## Overview
-This dataflow job read the file which is passed in the argument --inputFile, then finds all transactions which is greater than 20, excludes the transactions before 2010 and then aggregates based on the transaction date and find the total transaction amount. The aggregaed data is stored again in csv format into a file `output/results.jsonl.gz`.
+This Dataflow job reads the file passed in the argument --inputFile, finds all transactions greater than 20, excludes transactions before 2010, aggregates them based on the transaction date, and calculates the total transaction amount. The aggregated data is then stored in CSV format in the file `output/results.jsonl.gz`.
 
 For the input
 ```
@@ -30,7 +30,7 @@ It gives the output
 
 ## Usage
 
-### 1. Prepare Input File: Create a text file where each line contains a timestamp, a username, and an action ("Start" or "End"). The format should be:
+### 1. Prepare Input File: Create a text file where each line contains The transaction_date and transaction_amount. The format should be:
 ```
 2024-01-01,43.2
 2024-01-01,100.0
@@ -54,3 +54,6 @@ It gives the output
       java -jar dataflow-execute.jar --inputFile=<Path to the csv file crated in step1>
 
 ##### Example: java -jar dataflow-execute.jar E:\Ananth\Assessments\input\input.txt
+
+### 6. Verify the output
+	  Navigate to outputs folder and unzip the results.jsonl and view verify the result file.

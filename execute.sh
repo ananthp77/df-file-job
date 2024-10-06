@@ -1,4 +1,28 @@
 #!/bin/bash
-echo "Total arguments : $#"
-echo "1st Argument = $1"
-echo "2nd argument = $2"
+
+# Check if the input file argument is provided
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <Path to the CSV file>"
+    exit 1
+fi
+
+# Capture the input file path
+INPUT_FILE=$1
+
+# Step 1: Navigate to the cloned directory
+echo "Navigating to df-file-job directory..."
+cd df-file-job || exit
+
+# Step 2: Build the project using Maven
+echo "Running Maven clean install..."
+mvn clean install
+
+# Step 3: Navigate to the target directory
+echo "Navigating to target directory..."
+cd target || exit
+
+# Step 4: Execute the JAR file with the inputFile argument
+echo "Executing the Dataflow job with input file: $INPUT_FILE"
+java -jar dataflow-execute.jar --inputFile="$INPUT_FILE"
+
+echo "Execution completed."

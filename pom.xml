@@ -107,7 +107,7 @@
 									</excludes>
 								</filter>
 							</filters>
-							<finalName>dataflow1</finalName>
+							<finalName>dataflow-execute</finalName>
 							<shadedArtifactAttached>true</shadedArtifactAttached>
 							<shadedClassifierName>executable</shadedClassifierName>
 							<transformers>
